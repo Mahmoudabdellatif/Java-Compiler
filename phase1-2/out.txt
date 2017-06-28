@@ -1,0 +1,2307 @@
+(a-z|A-Z)((a-z|A-Z)|(0-9))*(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)((a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)|(0|1|2|3|4|5|6|7|8|9))*(0-9)+|(0-9)+.((0-9)+)(\L|E((0-9)+))(0|1|2|3|4|5|6|7|8|9)+|(0|1|2|3|4|5|6|7|8|9)+.((0|1|2|3|4|5|6|7|8|9)+)(\L|E((0|1|2|3|4|5|6|7|8|9)+))\=\=|!\=|>|>\=|<|<\=\=\=|!\=|>|>\=|<|<\===\+|-\+|-\*|/\*|/zkzk
+definitions_map
+digit=> 0-9
+digits=> digit+
+letter=> a-z|A-Z
+*****************************************
+key_words_vector
+--boolean-- --int-- --float-- --if-- --else-- --while-- 
+
+*****************************************
+punc_vector
+--;-- --,-- --\(-- --\)-- --{-- --}-- *****************************************
+re_map
+addop => 
+\+
+-
+|
+
+
+assign => 
+=
+
+
+id => 
+a
+b
+|
+c
+|
+d
+|
+e
+|
+f
+|
+g
+|
+h
+|
+i
+|
+j
+|
+k
+|
+l
+|
+m
+|
+n
+|
+o
+|
+p
+|
+q
+|
+r
+|
+s
+|
+t
+|
+u
+|
+v
+|
+w
+|
+x
+|
+y
+|
+z
+|
+A
+|
+B
+|
+C
+|
+D
+|
+E
+|
+F
+|
+G
+|
+H
+|
+I
+|
+J
+|
+K
+|
+L
+|
+M
+|
+N
+|
+O
+|
+P
+|
+Q
+|
+R
+|
+S
+|
+T
+|
+U
+|
+V
+|
+W
+|
+X
+|
+Y
+|
+Z
+|
+a
+b
+|
+c
+|
+d
+|
+e
+|
+f
+|
+g
+|
+h
+|
+i
+|
+j
+|
+k
+|
+l
+|
+m
+|
+n
+|
+o
+|
+p
+|
+q
+|
+r
+|
+s
+|
+t
+|
+u
+|
+v
+|
+w
+|
+x
+|
+y
+|
+z
+|
+A
+|
+B
+|
+C
+|
+D
+|
+E
+|
+F
+|
+G
+|
+H
+|
+I
+|
+J
+|
+K
+|
+L
+|
+M
+|
+N
+|
+O
+|
+P
+|
+Q
+|
+R
+|
+S
+|
+T
+|
+U
+|
+V
+|
+W
+|
+X
+|
+Y
+|
+Z
+|
+0
+1
+|
+2
+|
+3
+|
+4
+|
+5
+|
+6
+|
+7
+|
+8
+|
+9
+|
+|
+*
+@
+
+
+mulop => 
+\*
+/
+|
+
+
+num => 
+0
+1
+|
+2
+|
+3
+|
+4
+|
+5
+|
+6
+|
+7
+|
+8
+|
+9
+|
++
+0
+1
+|
+2
+|
+3
+|
+4
+|
+5
+|
+6
+|
+7
+|
+8
+|
+9
+|
++
+.
+@
+0
+1
+|
+2
+|
+3
+|
+4
+|
+5
+|
+6
+|
+7
+|
+8
+|
+9
+|
++
+@
+\L
+E
+0
+1
+|
+2
+|
+3
+|
+4
+|
+5
+|
+6
+|
+7
+|
+8
+|
+9
+|
++
+@
+|
+@
+|
+
+
+relop => 
+\=
+\=
+@
+!
+\=
+@
+>
+|
+>
+\=
+@
+<
+|
+<
+\=
+@
+|
+|
+|
+
+
+*****************************************
+node: 0
+	edge: \L to 1
+	edge: \L to 9
+	edge: \L to 13
+	edge: \L to 19
+	edge: \L to 22
+	edge: \L to 27
+	edge: \L to 33
+	edge: \L to 35
+	edge: \L to 37
+	edge: \L to 39
+	edge: \L to 41
+	edge: \L to 43
+	edge: \L to 49
+	edge: \L to 51
+	edge: \L to 257
+	edge: \L to 511
+	edge: \L to 833
+	edge: \L to 863
+node: 1
+	edge: b to 2
+node: 2
+	edge: o to 3
+node: 3
+	edge: o to 4
+node: 4
+	edge: l to 5
+node: 5
+	edge: e to 6
+node: 6
+	edge: a to 7
+node: 7
+	edge: n to 8
+node: 8   final, id: boolean
+node: 9
+	edge: i to 10
+node: 10
+	edge: n to 11
+node: 11
+	edge: t to 12
+node: 12   final, id: int
+node: 13
+	edge: f to 14
+node: 14
+	edge: l to 15
+node: 15
+	edge: o to 16
+node: 16
+	edge: a to 17
+node: 17
+	edge: t to 18
+node: 18   final, id: float
+node: 19
+	edge: i to 20
+node: 20
+	edge: f to 21
+node: 21   final, id: if
+node: 22
+	edge: e to 23
+node: 23
+	edge: l to 24
+node: 24
+	edge: s to 25
+node: 25
+	edge: e to 26
+node: 26   final, id: else
+node: 27
+	edge: w to 28
+node: 28
+	edge: h to 29
+node: 29
+	edge: i to 30
+node: 30
+	edge: l to 31
+node: 31
+	edge: e to 32
+node: 32   final, id: while
+node: 33
+	edge: ; to 34
+node: 34   final, id: ;
+node: 35
+	edge: , to 36
+node: 36   final, id: ,
+node: 37
+	edge: \( to 38
+node: 38   final, id: \(
+node: 39
+	edge: \) to 40
+node: 40   final, id: \)
+node: 41
+	edge: { to 42
+node: 42   final, id: {
+node: 43
+	edge: } to 44
+node: 44   final, id: }
+node: 45
+	edge: \+ to 46
+node: 46
+	edge: \L to 50
+node: 47
+	edge: - to 48
+node: 48
+	edge: \L to 50
+node: 49
+	edge: \L to 45
+	edge: \L to 47
+node: 50   final, id: addop
+node: 51
+	edge: = to 52
+node: 52   final, id: assign
+node: 53
+	edge: a to 54
+node: 54
+	edge: \L to 58
+node: 55
+	edge: b to 56
+node: 56
+	edge: \L to 58
+node: 57
+	edge: \L to 53
+	edge: \L to 55
+node: 58
+	edge: \L to 62
+node: 59
+	edge: c to 60
+node: 60
+	edge: \L to 62
+node: 61
+	edge: \L to 57
+	edge: \L to 59
+node: 62
+	edge: \L to 66
+node: 63
+	edge: d to 64
+node: 64
+	edge: \L to 66
+node: 65
+	edge: \L to 61
+	edge: \L to 63
+node: 66
+	edge: \L to 70
+node: 67
+	edge: e to 68
+node: 68
+	edge: \L to 70
+node: 69
+	edge: \L to 65
+	edge: \L to 67
+node: 70
+	edge: \L to 74
+node: 71
+	edge: f to 72
+node: 72
+	edge: \L to 74
+node: 73
+	edge: \L to 69
+	edge: \L to 71
+node: 74
+	edge: \L to 78
+node: 75
+	edge: g to 76
+node: 76
+	edge: \L to 78
+node: 77
+	edge: \L to 73
+	edge: \L to 75
+node: 78
+	edge: \L to 82
+node: 79
+	edge: h to 80
+node: 80
+	edge: \L to 82
+node: 81
+	edge: \L to 77
+	edge: \L to 79
+node: 82
+	edge: \L to 86
+node: 83
+	edge: i to 84
+node: 84
+	edge: \L to 86
+node: 85
+	edge: \L to 81
+	edge: \L to 83
+node: 86
+	edge: \L to 90
+node: 87
+	edge: j to 88
+node: 88
+	edge: \L to 90
+node: 89
+	edge: \L to 85
+	edge: \L to 87
+node: 90
+	edge: \L to 94
+node: 91
+	edge: k to 92
+node: 92
+	edge: \L to 94
+node: 93
+	edge: \L to 89
+	edge: \L to 91
+node: 94
+	edge: \L to 98
+node: 95
+	edge: l to 96
+node: 96
+	edge: \L to 98
+node: 97
+	edge: \L to 93
+	edge: \L to 95
+node: 98
+	edge: \L to 102
+node: 99
+	edge: m to 100
+node: 100
+	edge: \L to 102
+node: 101
+	edge: \L to 97
+	edge: \L to 99
+node: 102
+	edge: \L to 106
+node: 103
+	edge: n to 104
+node: 104
+	edge: \L to 106
+node: 105
+	edge: \L to 101
+	edge: \L to 103
+node: 106
+	edge: \L to 110
+node: 107
+	edge: o to 108
+node: 108
+	edge: \L to 110
+node: 109
+	edge: \L to 105
+	edge: \L to 107
+node: 110
+	edge: \L to 114
+node: 111
+	edge: p to 112
+node: 112
+	edge: \L to 114
+node: 113
+	edge: \L to 109
+	edge: \L to 111
+node: 114
+	edge: \L to 118
+node: 115
+	edge: q to 116
+node: 116
+	edge: \L to 118
+node: 117
+	edge: \L to 113
+	edge: \L to 115
+node: 118
+	edge: \L to 122
+node: 119
+	edge: r to 120
+node: 120
+	edge: \L to 122
+node: 121
+	edge: \L to 117
+	edge: \L to 119
+node: 122
+	edge: \L to 126
+node: 123
+	edge: s to 124
+node: 124
+	edge: \L to 126
+node: 125
+	edge: \L to 121
+	edge: \L to 123
+node: 126
+	edge: \L to 130
+node: 127
+	edge: t to 128
+node: 128
+	edge: \L to 130
+node: 129
+	edge: \L to 125
+	edge: \L to 127
+node: 130
+	edge: \L to 134
+node: 131
+	edge: u to 132
+node: 132
+	edge: \L to 134
+node: 133
+	edge: \L to 129
+	edge: \L to 131
+node: 134
+	edge: \L to 138
+node: 135
+	edge: v to 136
+node: 136
+	edge: \L to 138
+node: 137
+	edge: \L to 133
+	edge: \L to 135
+node: 138
+	edge: \L to 142
+node: 139
+	edge: w to 140
+node: 140
+	edge: \L to 142
+node: 141
+	edge: \L to 137
+	edge: \L to 139
+node: 142
+	edge: \L to 146
+node: 143
+	edge: x to 144
+node: 144
+	edge: \L to 146
+node: 145
+	edge: \L to 141
+	edge: \L to 143
+node: 146
+	edge: \L to 150
+node: 147
+	edge: y to 148
+node: 148
+	edge: \L to 150
+node: 149
+	edge: \L to 145
+	edge: \L to 147
+node: 150
+	edge: \L to 154
+node: 151
+	edge: z to 152
+node: 152
+	edge: \L to 154
+node: 153
+	edge: \L to 149
+	edge: \L to 151
+node: 154
+	edge: \L to 158
+node: 155
+	edge: A to 156
+node: 156
+	edge: \L to 158
+node: 157
+	edge: \L to 153
+	edge: \L to 155
+node: 158
+	edge: \L to 162
+node: 159
+	edge: B to 160
+node: 160
+	edge: \L to 162
+node: 161
+	edge: \L to 157
+	edge: \L to 159
+node: 162
+	edge: \L to 166
+node: 163
+	edge: C to 164
+node: 164
+	edge: \L to 166
+node: 165
+	edge: \L to 161
+	edge: \L to 163
+node: 166
+	edge: \L to 170
+node: 167
+	edge: D to 168
+node: 168
+	edge: \L to 170
+node: 169
+	edge: \L to 165
+	edge: \L to 167
+node: 170
+	edge: \L to 174
+node: 171
+	edge: E to 172
+node: 172
+	edge: \L to 174
+node: 173
+	edge: \L to 169
+	edge: \L to 171
+node: 174
+	edge: \L to 178
+node: 175
+	edge: F to 176
+node: 176
+	edge: \L to 178
+node: 177
+	edge: \L to 173
+	edge: \L to 175
+node: 178
+	edge: \L to 182
+node: 179
+	edge: G to 180
+node: 180
+	edge: \L to 182
+node: 181
+	edge: \L to 177
+	edge: \L to 179
+node: 182
+	edge: \L to 186
+node: 183
+	edge: H to 184
+node: 184
+	edge: \L to 186
+node: 185
+	edge: \L to 181
+	edge: \L to 183
+node: 186
+	edge: \L to 190
+node: 187
+	edge: I to 188
+node: 188
+	edge: \L to 190
+node: 189
+	edge: \L to 185
+	edge: \L to 187
+node: 190
+	edge: \L to 194
+node: 191
+	edge: J to 192
+node: 192
+	edge: \L to 194
+node: 193
+	edge: \L to 189
+	edge: \L to 191
+node: 194
+	edge: \L to 198
+node: 195
+	edge: K to 196
+node: 196
+	edge: \L to 198
+node: 197
+	edge: \L to 193
+	edge: \L to 195
+node: 198
+	edge: \L to 202
+node: 199
+	edge: L to 200
+node: 200
+	edge: \L to 202
+node: 201
+	edge: \L to 197
+	edge: \L to 199
+node: 202
+	edge: \L to 206
+node: 203
+	edge: M to 204
+node: 204
+	edge: \L to 206
+node: 205
+	edge: \L to 201
+	edge: \L to 203
+node: 206
+	edge: \L to 210
+node: 207
+	edge: N to 208
+node: 208
+	edge: \L to 210
+node: 209
+	edge: \L to 205
+	edge: \L to 207
+node: 210
+	edge: \L to 214
+node: 211
+	edge: O to 212
+node: 212
+	edge: \L to 214
+node: 213
+	edge: \L to 209
+	edge: \L to 211
+node: 214
+	edge: \L to 218
+node: 215
+	edge: P to 216
+node: 216
+	edge: \L to 218
+node: 217
+	edge: \L to 213
+	edge: \L to 215
+node: 218
+	edge: \L to 222
+node: 219
+	edge: Q to 220
+node: 220
+	edge: \L to 222
+node: 221
+	edge: \L to 217
+	edge: \L to 219
+node: 222
+	edge: \L to 226
+node: 223
+	edge: R to 224
+node: 224
+	edge: \L to 226
+node: 225
+	edge: \L to 221
+	edge: \L to 223
+node: 226
+	edge: \L to 230
+node: 227
+	edge: S to 228
+node: 228
+	edge: \L to 230
+node: 229
+	edge: \L to 225
+	edge: \L to 227
+node: 230
+	edge: \L to 234
+node: 231
+	edge: T to 232
+node: 232
+	edge: \L to 234
+node: 233
+	edge: \L to 229
+	edge: \L to 231
+node: 234
+	edge: \L to 238
+node: 235
+	edge: U to 236
+node: 236
+	edge: \L to 238
+node: 237
+	edge: \L to 233
+	edge: \L to 235
+node: 238
+	edge: \L to 242
+node: 239
+	edge: V to 240
+node: 240
+	edge: \L to 242
+node: 241
+	edge: \L to 237
+	edge: \L to 239
+node: 242
+	edge: \L to 246
+node: 243
+	edge: W to 244
+node: 244
+	edge: \L to 246
+node: 245
+	edge: \L to 241
+	edge: \L to 243
+node: 246
+	edge: \L to 250
+node: 247
+	edge: X to 248
+node: 248
+	edge: \L to 250
+node: 249
+	edge: \L to 245
+	edge: \L to 247
+node: 250
+	edge: \L to 254
+node: 251
+	edge: Y to 252
+node: 252
+	edge: \L to 254
+node: 253
+	edge: \L to 249
+	edge: \L to 251
+node: 254
+	edge: \L to 258
+node: 255
+	edge: Z to 256
+node: 256
+	edge: \L to 258
+node: 257
+	edge: \L to 253
+	edge: \L to 255
+node: 258
+	edge: \L to 505
+node: 259
+	edge: a to 260
+node: 260
+	edge: \L to 264
+node: 261
+	edge: b to 262
+node: 262
+	edge: \L to 264
+node: 263
+	edge: \L to 259
+	edge: \L to 261
+node: 264
+	edge: \L to 268
+node: 265
+	edge: c to 266
+node: 266
+	edge: \L to 268
+node: 267
+	edge: \L to 263
+	edge: \L to 265
+node: 268
+	edge: \L to 272
+node: 269
+	edge: d to 270
+node: 270
+	edge: \L to 272
+node: 271
+	edge: \L to 267
+	edge: \L to 269
+node: 272
+	edge: \L to 276
+node: 273
+	edge: e to 274
+node: 274
+	edge: \L to 276
+node: 275
+	edge: \L to 271
+	edge: \L to 273
+node: 276
+	edge: \L to 280
+node: 277
+	edge: f to 278
+node: 278
+	edge: \L to 280
+node: 279
+	edge: \L to 275
+	edge: \L to 277
+node: 280
+	edge: \L to 284
+node: 281
+	edge: g to 282
+node: 282
+	edge: \L to 284
+node: 283
+	edge: \L to 279
+	edge: \L to 281
+node: 284
+	edge: \L to 288
+node: 285
+	edge: h to 286
+node: 286
+	edge: \L to 288
+node: 287
+	edge: \L to 283
+	edge: \L to 285
+node: 288
+	edge: \L to 292
+node: 289
+	edge: i to 290
+node: 290
+	edge: \L to 292
+node: 291
+	edge: \L to 287
+	edge: \L to 289
+node: 292
+	edge: \L to 296
+node: 293
+	edge: j to 294
+node: 294
+	edge: \L to 296
+node: 295
+	edge: \L to 291
+	edge: \L to 293
+node: 296
+	edge: \L to 300
+node: 297
+	edge: k to 298
+node: 298
+	edge: \L to 300
+node: 299
+	edge: \L to 295
+	edge: \L to 297
+node: 300
+	edge: \L to 304
+node: 301
+	edge: l to 302
+node: 302
+	edge: \L to 304
+node: 303
+	edge: \L to 299
+	edge: \L to 301
+node: 304
+	edge: \L to 308
+node: 305
+	edge: m to 306
+node: 306
+	edge: \L to 308
+node: 307
+	edge: \L to 303
+	edge: \L to 305
+node: 308
+	edge: \L to 312
+node: 309
+	edge: n to 310
+node: 310
+	edge: \L to 312
+node: 311
+	edge: \L to 307
+	edge: \L to 309
+node: 312
+	edge: \L to 316
+node: 313
+	edge: o to 314
+node: 314
+	edge: \L to 316
+node: 315
+	edge: \L to 311
+	edge: \L to 313
+node: 316
+	edge: \L to 320
+node: 317
+	edge: p to 318
+node: 318
+	edge: \L to 320
+node: 319
+	edge: \L to 315
+	edge: \L to 317
+node: 320
+	edge: \L to 324
+node: 321
+	edge: q to 322
+node: 322
+	edge: \L to 324
+node: 323
+	edge: \L to 319
+	edge: \L to 321
+node: 324
+	edge: \L to 328
+node: 325
+	edge: r to 326
+node: 326
+	edge: \L to 328
+node: 327
+	edge: \L to 323
+	edge: \L to 325
+node: 328
+	edge: \L to 332
+node: 329
+	edge: s to 330
+node: 330
+	edge: \L to 332
+node: 331
+	edge: \L to 327
+	edge: \L to 329
+node: 332
+	edge: \L to 336
+node: 333
+	edge: t to 334
+node: 334
+	edge: \L to 336
+node: 335
+	edge: \L to 331
+	edge: \L to 333
+node: 336
+	edge: \L to 340
+node: 337
+	edge: u to 338
+node: 338
+	edge: \L to 340
+node: 339
+	edge: \L to 335
+	edge: \L to 337
+node: 340
+	edge: \L to 344
+node: 341
+	edge: v to 342
+node: 342
+	edge: \L to 344
+node: 343
+	edge: \L to 339
+	edge: \L to 341
+node: 344
+	edge: \L to 348
+node: 345
+	edge: w to 346
+node: 346
+	edge: \L to 348
+node: 347
+	edge: \L to 343
+	edge: \L to 345
+node: 348
+	edge: \L to 352
+node: 349
+	edge: x to 350
+node: 350
+	edge: \L to 352
+node: 351
+	edge: \L to 347
+	edge: \L to 349
+node: 352
+	edge: \L to 356
+node: 353
+	edge: y to 354
+node: 354
+	edge: \L to 356
+node: 355
+	edge: \L to 351
+	edge: \L to 353
+node: 356
+	edge: \L to 360
+node: 357
+	edge: z to 358
+node: 358
+	edge: \L to 360
+node: 359
+	edge: \L to 355
+	edge: \L to 357
+node: 360
+	edge: \L to 364
+node: 361
+	edge: A to 362
+node: 362
+	edge: \L to 364
+node: 363
+	edge: \L to 359
+	edge: \L to 361
+node: 364
+	edge: \L to 368
+node: 365
+	edge: B to 366
+node: 366
+	edge: \L to 368
+node: 367
+	edge: \L to 363
+	edge: \L to 365
+node: 368
+	edge: \L to 372
+node: 369
+	edge: C to 370
+node: 370
+	edge: \L to 372
+node: 371
+	edge: \L to 367
+	edge: \L to 369
+node: 372
+	edge: \L to 376
+node: 373
+	edge: D to 374
+node: 374
+	edge: \L to 376
+node: 375
+	edge: \L to 371
+	edge: \L to 373
+node: 376
+	edge: \L to 380
+node: 377
+	edge: E to 378
+node: 378
+	edge: \L to 380
+node: 379
+	edge: \L to 375
+	edge: \L to 377
+node: 380
+	edge: \L to 384
+node: 381
+	edge: F to 382
+node: 382
+	edge: \L to 384
+node: 383
+	edge: \L to 379
+	edge: \L to 381
+node: 384
+	edge: \L to 388
+node: 385
+	edge: G to 386
+node: 386
+	edge: \L to 388
+node: 387
+	edge: \L to 383
+	edge: \L to 385
+node: 388
+	edge: \L to 392
+node: 389
+	edge: H to 390
+node: 390
+	edge: \L to 392
+node: 391
+	edge: \L to 387
+	edge: \L to 389
+node: 392
+	edge: \L to 396
+node: 393
+	edge: I to 394
+node: 394
+	edge: \L to 396
+node: 395
+	edge: \L to 391
+	edge: \L to 393
+node: 396
+	edge: \L to 400
+node: 397
+	edge: J to 398
+node: 398
+	edge: \L to 400
+node: 399
+	edge: \L to 395
+	edge: \L to 397
+node: 400
+	edge: \L to 404
+node: 401
+	edge: K to 402
+node: 402
+	edge: \L to 404
+node: 403
+	edge: \L to 399
+	edge: \L to 401
+node: 404
+	edge: \L to 408
+node: 405
+	edge: L to 406
+node: 406
+	edge: \L to 408
+node: 407
+	edge: \L to 403
+	edge: \L to 405
+node: 408
+	edge: \L to 412
+node: 409
+	edge: M to 410
+node: 410
+	edge: \L to 412
+node: 411
+	edge: \L to 407
+	edge: \L to 409
+node: 412
+	edge: \L to 416
+node: 413
+	edge: N to 414
+node: 414
+	edge: \L to 416
+node: 415
+	edge: \L to 411
+	edge: \L to 413
+node: 416
+	edge: \L to 420
+node: 417
+	edge: O to 418
+node: 418
+	edge: \L to 420
+node: 419
+	edge: \L to 415
+	edge: \L to 417
+node: 420
+	edge: \L to 424
+node: 421
+	edge: P to 422
+node: 422
+	edge: \L to 424
+node: 423
+	edge: \L to 419
+	edge: \L to 421
+node: 424
+	edge: \L to 428
+node: 425
+	edge: Q to 426
+node: 426
+	edge: \L to 428
+node: 427
+	edge: \L to 423
+	edge: \L to 425
+node: 428
+	edge: \L to 432
+node: 429
+	edge: R to 430
+node: 430
+	edge: \L to 432
+node: 431
+	edge: \L to 427
+	edge: \L to 429
+node: 432
+	edge: \L to 436
+node: 433
+	edge: S to 434
+node: 434
+	edge: \L to 436
+node: 435
+	edge: \L to 431
+	edge: \L to 433
+node: 436
+	edge: \L to 440
+node: 437
+	edge: T to 438
+node: 438
+	edge: \L to 440
+node: 439
+	edge: \L to 435
+	edge: \L to 437
+node: 440
+	edge: \L to 444
+node: 441
+	edge: U to 442
+node: 442
+	edge: \L to 444
+node: 443
+	edge: \L to 439
+	edge: \L to 441
+node: 444
+	edge: \L to 448
+node: 445
+	edge: V to 446
+node: 446
+	edge: \L to 448
+node: 447
+	edge: \L to 443
+	edge: \L to 445
+node: 448
+	edge: \L to 452
+node: 449
+	edge: W to 450
+node: 450
+	edge: \L to 452
+node: 451
+	edge: \L to 447
+	edge: \L to 449
+node: 452
+	edge: \L to 456
+node: 453
+	edge: X to 454
+node: 454
+	edge: \L to 456
+node: 455
+	edge: \L to 451
+	edge: \L to 453
+node: 456
+	edge: \L to 460
+node: 457
+	edge: Y to 458
+node: 458
+	edge: \L to 460
+node: 459
+	edge: \L to 455
+	edge: \L to 457
+node: 460
+	edge: \L to 464
+node: 461
+	edge: Z to 462
+node: 462
+	edge: \L to 464
+node: 463
+	edge: \L to 459
+	edge: \L to 461
+node: 464
+	edge: \L to 504
+node: 465
+	edge: 0 to 466
+node: 466
+	edge: \L to 470
+node: 467
+	edge: 1 to 468
+node: 468
+	edge: \L to 470
+node: 469
+	edge: \L to 465
+	edge: \L to 467
+node: 470
+	edge: \L to 474
+node: 471
+	edge: 2 to 472
+node: 472
+	edge: \L to 474
+node: 473
+	edge: \L to 469
+	edge: \L to 471
+node: 474
+	edge: \L to 478
+node: 475
+	edge: 3 to 476
+node: 476
+	edge: \L to 478
+node: 477
+	edge: \L to 473
+	edge: \L to 475
+node: 478
+	edge: \L to 482
+node: 479
+	edge: 4 to 480
+node: 480
+	edge: \L to 482
+node: 481
+	edge: \L to 477
+	edge: \L to 479
+node: 482
+	edge: \L to 486
+node: 483
+	edge: 5 to 484
+node: 484
+	edge: \L to 486
+node: 485
+	edge: \L to 481
+	edge: \L to 483
+node: 486
+	edge: \L to 490
+node: 487
+	edge: 6 to 488
+node: 488
+	edge: \L to 490
+node: 489
+	edge: \L to 485
+	edge: \L to 487
+node: 490
+	edge: \L to 494
+node: 491
+	edge: 7 to 492
+node: 492
+	edge: \L to 494
+node: 493
+	edge: \L to 489
+	edge: \L to 491
+node: 494
+	edge: \L to 498
+node: 495
+	edge: 8 to 496
+node: 496
+	edge: \L to 498
+node: 497
+	edge: \L to 493
+	edge: \L to 495
+node: 498
+	edge: \L to 502
+node: 499
+	edge: 9 to 500
+node: 500
+	edge: \L to 502
+node: 501
+	edge: \L to 497
+	edge: \L to 499
+node: 502
+	edge: \L to 504
+node: 503
+	edge: \L to 463
+	edge: \L to 501
+node: 504
+	edge: \L to 503
+	edge: \L to 506
+node: 505
+	edge: \L to 503
+	edge: \L to 506
+node: 506   final, id: id
+node: 507
+	edge: \* to 508
+node: 508
+	edge: \L to 512
+node: 509
+	edge: / to 510
+node: 510
+	edge: \L to 512
+node: 511
+	edge: \L to 507
+	edge: \L to 509
+node: 512   final, id: mulop
+node: 513
+	edge: 0 to 514
+node: 514
+	edge: \L to 518
+node: 515
+	edge: 1 to 516
+node: 516
+	edge: \L to 518
+node: 517
+	edge: \L to 513
+	edge: \L to 515
+node: 518
+	edge: \L to 522
+node: 519
+	edge: 2 to 520
+node: 520
+	edge: \L to 522
+node: 521
+	edge: \L to 517
+	edge: \L to 519
+node: 522
+	edge: \L to 526
+node: 523
+	edge: 3 to 524
+node: 524
+	edge: \L to 526
+node: 525
+	edge: \L to 521
+	edge: \L to 523
+node: 526
+	edge: \L to 530
+node: 527
+	edge: 4 to 528
+node: 528
+	edge: \L to 530
+node: 529
+	edge: \L to 525
+	edge: \L to 527
+node: 530
+	edge: \L to 534
+node: 531
+	edge: 5 to 532
+node: 532
+	edge: \L to 534
+node: 533
+	edge: \L to 529
+	edge: \L to 531
+node: 534
+	edge: \L to 538
+node: 535
+	edge: 6 to 536
+node: 536
+	edge: \L to 538
+node: 537
+	edge: \L to 533
+	edge: \L to 535
+node: 538
+	edge: \L to 542
+node: 539
+	edge: 7 to 540
+node: 540
+	edge: \L to 542
+node: 541
+	edge: \L to 537
+	edge: \L to 539
+node: 542
+	edge: \L to 546
+node: 543
+	edge: 8 to 544
+node: 544
+	edge: \L to 546
+node: 545
+	edge: \L to 541
+	edge: \L to 543
+node: 546
+	edge: \L to 550
+node: 547
+	edge: 9 to 548
+node: 548
+	edge: \L to 550
+node: 549
+	edge: \L to 545
+	edge: \L to 547
+node: 550
+	edge: \L to 589
+node: 551
+	edge: \L to 552
+	edge: \L to 553
+node: 552
+	edge: \L to 556
+	edge: \L to 557
+node: 553
+	edge: 9 to 554
+node: 554
+	edge: \L to 555
+node: 555
+	edge: \L to 551
+	edge: \L to 590
+node: 556
+	edge: \L to 560
+	edge: \L to 561
+node: 557
+	edge: 8 to 558
+node: 558
+	edge: \L to 559
+node: 559
+	edge: \L to 555
+node: 560
+	edge: \L to 564
+	edge: \L to 565
+node: 561
+	edge: 7 to 562
+node: 562
+	edge: \L to 563
+node: 563
+	edge: \L to 559
+node: 564
+	edge: \L to 568
+	edge: \L to 569
+node: 565
+	edge: 6 to 566
+node: 566
+	edge: \L to 567
+node: 567
+	edge: \L to 563
+node: 568
+	edge: \L to 572
+	edge: \L to 573
+node: 569
+	edge: 5 to 570
+node: 570
+	edge: \L to 571
+node: 571
+	edge: \L to 567
+node: 572
+	edge: \L to 576
+	edge: \L to 577
+node: 573
+	edge: 4 to 574
+node: 574
+	edge: \L to 575
+node: 575
+	edge: \L to 571
+node: 576
+	edge: \L to 580
+	edge: \L to 581
+node: 577
+	edge: 3 to 578
+node: 578
+	edge: \L to 579
+node: 579
+	edge: \L to 575
+node: 580
+	edge: \L to 584
+	edge: \L to 585
+node: 581
+	edge: 2 to 582
+node: 582
+	edge: \L to 583
+node: 583
+	edge: \L to 579
+node: 584
+	edge: 0 to 588
+node: 585
+	edge: 1 to 586
+node: 586
+	edge: \L to 587
+node: 587
+	edge: \L to 583
+node: 588
+	edge: \L to 587
+node: 589
+	edge: \L to 551
+	edge: \L to 590
+node: 590
+	edge: \L to 834
+node: 591
+	edge: 0 to 592
+node: 592
+	edge: \L to 596
+node: 593
+	edge: 1 to 594
+node: 594
+	edge: \L to 596
+node: 595
+	edge: \L to 591
+	edge: \L to 593
+node: 596
+	edge: \L to 600
+node: 597
+	edge: 2 to 598
+node: 598
+	edge: \L to 600
+node: 599
+	edge: \L to 595
+	edge: \L to 597
+node: 600
+	edge: \L to 604
+node: 601
+	edge: 3 to 602
+node: 602
+	edge: \L to 604
+node: 603
+	edge: \L to 599
+	edge: \L to 601
+node: 604
+	edge: \L to 608
+node: 605
+	edge: 4 to 606
+node: 606
+	edge: \L to 608
+node: 607
+	edge: \L to 603
+	edge: \L to 605
+node: 608
+	edge: \L to 612
+node: 609
+	edge: 5 to 610
+node: 610
+	edge: \L to 612
+node: 611
+	edge: \L to 607
+	edge: \L to 609
+node: 612
+	edge: \L to 616
+node: 613
+	edge: 6 to 614
+node: 614
+	edge: \L to 616
+node: 615
+	edge: \L to 611
+	edge: \L to 613
+node: 616
+	edge: \L to 620
+node: 617
+	edge: 7 to 618
+node: 618
+	edge: \L to 620
+node: 619
+	edge: \L to 615
+	edge: \L to 617
+node: 620
+	edge: \L to 624
+node: 621
+	edge: 8 to 622
+node: 622
+	edge: \L to 624
+node: 623
+	edge: \L to 619
+	edge: \L to 621
+node: 624
+	edge: \L to 628
+node: 625
+	edge: 9 to 626
+node: 626
+	edge: \L to 628
+node: 627
+	edge: \L to 623
+	edge: \L to 625
+node: 628
+	edge: \L to 667
+node: 629
+	edge: \L to 630
+	edge: \L to 631
+node: 630
+	edge: \L to 634
+	edge: \L to 635
+node: 631
+	edge: 9 to 632
+node: 632
+	edge: \L to 633
+node: 633
+	edge: \L to 629
+	edge: \L to 668
+node: 634
+	edge: \L to 638
+	edge: \L to 639
+node: 635
+	edge: 8 to 636
+node: 636
+	edge: \L to 637
+node: 637
+	edge: \L to 633
+node: 638
+	edge: \L to 642
+	edge: \L to 643
+node: 639
+	edge: 7 to 640
+node: 640
+	edge: \L to 641
+node: 641
+	edge: \L to 637
+node: 642
+	edge: \L to 646
+	edge: \L to 647
+node: 643
+	edge: 6 to 644
+node: 644
+	edge: \L to 645
+node: 645
+	edge: \L to 641
+node: 646
+	edge: \L to 650
+	edge: \L to 651
+node: 647
+	edge: 5 to 648
+node: 648
+	edge: \L to 649
+node: 649
+	edge: \L to 645
+node: 650
+	edge: \L to 654
+	edge: \L to 655
+node: 651
+	edge: 4 to 652
+node: 652
+	edge: \L to 653
+node: 653
+	edge: \L to 649
+node: 654
+	edge: \L to 658
+	edge: \L to 659
+node: 655
+	edge: 3 to 656
+node: 656
+	edge: \L to 657
+node: 657
+	edge: \L to 653
+node: 658
+	edge: \L to 662
+	edge: \L to 663
+node: 659
+	edge: 2 to 660
+node: 660
+	edge: \L to 661
+node: 661
+	edge: \L to 657
+node: 662
+	edge: 0 to 666
+node: 663
+	edge: 1 to 664
+node: 664
+	edge: \L to 665
+node: 665
+	edge: \L to 661
+node: 666
+	edge: \L to 665
+node: 667
+	edge: \L to 629
+	edge: \L to 668
+node: 668
+	edge: \L to 669
+node: 669
+	edge: . to 670
+node: 670
+	edge: \L to 707
+node: 671
+	edge: 0 to 672
+node: 672
+	edge: \L to 676
+node: 673
+	edge: 1 to 674
+node: 674
+	edge: \L to 676
+node: 675
+	edge: \L to 671
+	edge: \L to 673
+node: 676
+	edge: \L to 680
+node: 677
+	edge: 2 to 678
+node: 678
+	edge: \L to 680
+node: 679
+	edge: \L to 675
+	edge: \L to 677
+node: 680
+	edge: \L to 684
+node: 681
+	edge: 3 to 682
+node: 682
+	edge: \L to 684
+node: 683
+	edge: \L to 679
+	edge: \L to 681
+node: 684
+	edge: \L to 688
+node: 685
+	edge: 4 to 686
+node: 686
+	edge: \L to 688
+node: 687
+	edge: \L to 683
+	edge: \L to 685
+node: 688
+	edge: \L to 692
+node: 689
+	edge: 5 to 690
+node: 690
+	edge: \L to 692
+node: 691
+	edge: \L to 687
+	edge: \L to 689
+node: 692
+	edge: \L to 696
+node: 693
+	edge: 6 to 694
+node: 694
+	edge: \L to 696
+node: 695
+	edge: \L to 691
+	edge: \L to 693
+node: 696
+	edge: \L to 700
+node: 697
+	edge: 7 to 698
+node: 698
+	edge: \L to 700
+node: 699
+	edge: \L to 695
+	edge: \L to 697
+node: 700
+	edge: \L to 704
+node: 701
+	edge: 8 to 702
+node: 702
+	edge: \L to 704
+node: 703
+	edge: \L to 699
+	edge: \L to 701
+node: 704
+	edge: \L to 708
+node: 705
+	edge: 9 to 706
+node: 706
+	edge: \L to 708
+node: 707
+	edge: \L to 703
+	edge: \L to 705
+node: 708
+	edge: \L to 747
+node: 709
+	edge: \L to 710
+	edge: \L to 711
+node: 710
+	edge: \L to 714
+	edge: \L to 715
+node: 711
+	edge: 9 to 712
+node: 712
+	edge: \L to 713
+node: 713
+	edge: \L to 709
+	edge: \L to 748
+node: 714
+	edge: \L to 718
+	edge: \L to 719
+node: 715
+	edge: 8 to 716
+node: 716
+	edge: \L to 717
+node: 717
+	edge: \L to 713
+node: 718
+	edge: \L to 722
+	edge: \L to 723
+node: 719
+	edge: 7 to 720
+node: 720
+	edge: \L to 721
+node: 721
+	edge: \L to 717
+node: 722
+	edge: \L to 726
+	edge: \L to 727
+node: 723
+	edge: 6 to 724
+node: 724
+	edge: \L to 725
+node: 725
+	edge: \L to 721
+node: 726
+	edge: \L to 730
+	edge: \L to 731
+node: 727
+	edge: 5 to 728
+node: 728
+	edge: \L to 729
+node: 729
+	edge: \L to 725
+node: 730
+	edge: \L to 734
+	edge: \L to 735
+node: 731
+	edge: 4 to 732
+node: 732
+	edge: \L to 733
+node: 733
+	edge: \L to 729
+node: 734
+	edge: \L to 738
+	edge: \L to 739
+node: 735
+	edge: 3 to 736
+node: 736
+	edge: \L to 737
+node: 737
+	edge: \L to 733
+node: 738
+	edge: \L to 742
+	edge: \L to 743
+node: 739
+	edge: 2 to 740
+node: 740
+	edge: \L to 741
+node: 741
+	edge: \L to 737
+node: 742
+	edge: 0 to 746
+node: 743
+	edge: 1 to 744
+node: 744
+	edge: \L to 745
+node: 745
+	edge: \L to 741
+node: 746
+	edge: \L to 745
+node: 747
+	edge: \L to 709
+	edge: \L to 748
+node: 748
+	edge: \L to 831
+node: 749
+	edge: \L to 750
+node: 750
+	edge: \L to 832
+node: 751
+	edge: E to 752
+node: 752
+	edge: \L to 789
+node: 753
+	edge: 0 to 754
+node: 754
+	edge: \L to 758
+node: 755
+	edge: 1 to 756
+node: 756
+	edge: \L to 758
+node: 757
+	edge: \L to 753
+	edge: \L to 755
+node: 758
+	edge: \L to 762
+node: 759
+	edge: 2 to 760
+node: 760
+	edge: \L to 762
+node: 761
+	edge: \L to 757
+	edge: \L to 759
+node: 762
+	edge: \L to 766
+node: 763
+	edge: 3 to 764
+node: 764
+	edge: \L to 766
+node: 765
+	edge: \L to 761
+	edge: \L to 763
+node: 766
+	edge: \L to 770
+node: 767
+	edge: 4 to 768
+node: 768
+	edge: \L to 770
+node: 769
+	edge: \L to 765
+	edge: \L to 767
+node: 770
+	edge: \L to 774
+node: 771
+	edge: 5 to 772
+node: 772
+	edge: \L to 774
+node: 773
+	edge: \L to 769
+	edge: \L to 771
+node: 774
+	edge: \L to 778
+node: 775
+	edge: 6 to 776
+node: 776
+	edge: \L to 778
+node: 777
+	edge: \L to 773
+	edge: \L to 775
+node: 778
+	edge: \L to 782
+node: 779
+	edge: 7 to 780
+node: 780
+	edge: \L to 782
+node: 781
+	edge: \L to 777
+	edge: \L to 779
+node: 782
+	edge: \L to 786
+node: 783
+	edge: 8 to 784
+node: 784
+	edge: \L to 786
+node: 785
+	edge: \L to 781
+	edge: \L to 783
+node: 786
+	edge: \L to 790
+node: 787
+	edge: 9 to 788
+node: 788
+	edge: \L to 790
+node: 789
+	edge: \L to 785
+	edge: \L to 787
+node: 790
+	edge: \L to 829
+node: 791
+	edge: \L to 792
+	edge: \L to 793
+node: 792
+	edge: \L to 796
+	edge: \L to 797
+node: 793
+	edge: 9 to 794
+node: 794
+	edge: \L to 795
+node: 795
+	edge: \L to 791
+	edge: \L to 830
+node: 796
+	edge: \L to 800
+	edge: \L to 801
+node: 797
+	edge: 8 to 798
+node: 798
+	edge: \L to 799
+node: 799
+	edge: \L to 795
+node: 800
+	edge: \L to 804
+	edge: \L to 805
+node: 801
+	edge: 7 to 802
+node: 802
+	edge: \L to 803
+node: 803
+	edge: \L to 799
+node: 804
+	edge: \L to 808
+	edge: \L to 809
+node: 805
+	edge: 6 to 806
+node: 806
+	edge: \L to 807
+node: 807
+	edge: \L to 803
+node: 808
+	edge: \L to 812
+	edge: \L to 813
+node: 809
+	edge: 5 to 810
+node: 810
+	edge: \L to 811
+node: 811
+	edge: \L to 807
+node: 812
+	edge: \L to 816
+	edge: \L to 817
+node: 813
+	edge: 4 to 814
+node: 814
+	edge: \L to 815
+node: 815
+	edge: \L to 811
+node: 816
+	edge: \L to 820
+	edge: \L to 821
+node: 817
+	edge: 3 to 818
+node: 818
+	edge: \L to 819
+node: 819
+	edge: \L to 815
+node: 820
+	edge: \L to 824
+	edge: \L to 825
+node: 821
+	edge: 2 to 822
+node: 822
+	edge: \L to 823
+node: 823
+	edge: \L to 819
+node: 824
+	edge: 0 to 828
+node: 825
+	edge: 1 to 826
+node: 826
+	edge: \L to 827
+node: 827
+	edge: \L to 823
+node: 828
+	edge: \L to 827
+node: 829
+	edge: \L to 791
+	edge: \L to 830
+node: 830
+	edge: \L to 832
+node: 831
+	edge: \L to 749
+	edge: \L to 751
+node: 832
+	edge: \L to 834
+node: 833
+	edge: \L to 549
+	edge: \L to 627
+node: 834   final, id: num
+node: 835
+	edge: \= to 836
+node: 836
+	edge: \L to 837
+node: 837
+	edge: \= to 838
+node: 838
+	edge: \L to 864
+node: 839
+	edge: ! to 840
+node: 840
+	edge: \L to 841
+node: 841
+	edge: \= to 842
+node: 842
+	edge: \L to 846
+node: 843
+	edge: > to 844
+node: 844
+	edge: \L to 846
+node: 845
+	edge: \L to 839
+	edge: \L to 843
+node: 846
+	edge: \L to 862
+node: 847
+	edge: > to 848
+node: 848
+	edge: \L to 849
+node: 849
+	edge: \= to 850
+node: 850
+	edge: \L to 854
+node: 851
+	edge: < to 852
+node: 852
+	edge: \L to 854
+node: 853
+	edge: \L to 847
+	edge: \L to 851
+node: 854
+	edge: \L to 860
+node: 855
+	edge: < to 856
+node: 856
+	edge: \L to 857
+node: 857
+	edge: \= to 858
+node: 858
+	edge: \L to 860
+node: 859
+	edge: \L to 853
+	edge: \L to 855
+node: 860
+	edge: \L to 862
+node: 861
+	edge: \L to 845
+	edge: \L to 859
+node: 862
+	edge: \L to 864
+node: 863
+	edge: \L to 835
+	edge: \L to 861
+node: 864   final, id: relop

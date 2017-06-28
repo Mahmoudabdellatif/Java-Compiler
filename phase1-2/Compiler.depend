@@ -1,0 +1,380 @@
+# depslib dependency file v1.0
+1492969530 source:c:\users\shady\desktop\compiler\main.cpp
+	<iostream>
+	<map>
+	<vector>
+	<string>
+	"include\LexicalInclude\NFABuilder.h"
+	"include\LexicalInclude\LexicalAnalyzer.h"
+	<stdio.h>
+	"include\LexicalInclude\Reader.h"
+	"include\LexicalInclude\DFA.h"
+	"include/ParserInclude/Parser.h"
+	<regex>
+
+1491662273 c:\users\shady\desktop\compiler\include\lexicalinclude\nfabuilder.h
+	<string>
+	<vector>
+	<iostream>
+	<utility>
+	<stack>
+	<map>
+	"graph.h"
+
+1490542660 c:\users\shady\desktop\compiler\include\lexicalinclude\graph.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+
+1491821687 c:\users\shady\desktop\compiler\include\lexicalinclude\lexicalanalyzer.h
+	"graph.h"
+	"NFABuilder.h"
+	<bits/stdc++.h>
+
+1492026636 c:\users\shady\desktop\compiler\include\lexicalinclude\reader.h
+	<stdio.h>
+	<sstream>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<string>
+	<map>
+	<vector>
+	<regex>
+	<fstream>
+	"Postfix.h"
+
+1492026656 c:\users\shady\desktop\compiler\include\lexicalinclude\postfix.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<vector>
+	<strings.h>
+	<stack>
+
+1491811326 c:\users\shady\desktop\compiler\include\lexicalinclude\dfa.h
+	<bits/stdc++.h>
+	"graph.h"
+
+1492968044 source:c:\users\shady\desktop\compiler\src\lexicalsrc\dfa.cpp
+	"../../include/LexicalInclude/DFA.h"
+	"../../include/LexicalInclude/graph.h"
+	<bits/stdc++.h>
+
+1492968066 source:c:\users\shady\desktop\compiler\src\lexicalsrc\dfaminimizer.cpp
+	"../../include/LexicalInclude/DFAMinimizer.h"
+
+1491813162 c:\users\shady\desktop\compiler\include\lexicalinclude\dfaminimizer.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<set>
+	<string.h>
+	<stdlib.h>
+	"DFA.h"
+
+1492968075 source:c:\users\shady\desktop\compiler\src\lexicalsrc\graph.cpp
+	"../../include/LexicalInclude/graph.h"
+	<iostream>
+	<vector>
+	<map>
+	<string>
+
+1492968087 source:c:\users\shady\desktop\compiler\src\lexicalsrc\lexicalanalyzer.cpp
+	<bits/stdc++.h>
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+	"../../include/LexicalInclude/NFABuilder.h"
+	"../../include/LexicalInclude/DFA.h"
+	"../../include/LexicalInclude/DFAMinimizer.h"
+
+1492968098 source:c:\users\shady\desktop\compiler\src\lexicalsrc\nfabuilder.cpp
+	"../../include/LexicalInclude/NFABuilder.h"
+	"../../include/LexicalInclude/graph.h"
+	<string>
+	<iterator>
+	<stack>
+	<vector>
+	<iostream>
+	<utility>
+	"../../include/LexicalInclude/Reader.h"
+
+1492968104 source:c:\users\shady\desktop\compiler\src\lexicalsrc\postfix.cpp
+	"../../include/LexicalInclude/Postfix.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<vector>
+	<strings.h>
+	<stack>
+	<sstream>
+	<iterator>
+	<fstream>
+	<regex>
+
+1492968115 source:c:\users\shady\desktop\compiler\src\lexicalsrc\reader.cpp
+	"../../include/LexicalInclude/Reader.h"
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<strings.h>
+	<string>
+	<map>
+	<regex>
+
+1492969610 source:c:\users\shady\desktop\compiler\src\parsersrc\grammerparser.cpp
+	"../../include/ParserInclude/GrammerParser.h"
+	<iostream>
+	<vector>
+	<string>
+	<regex>
+	<fstream>
+
+1492961566 c:\users\shady\desktop\compiler\include\parserinclude\grammerparser.h
+	<bits/stdc++.h>
+	<sstream>
+
+1492970566 source:c:\users\shady\desktop\compiler\src\parsersrc\parser.cpp
+	"../../include/ParserInclude/Parser.h"
+	"../../include/ParserInclude/GrammerParser.h"
+	"../../include/ParserInclude/ParsingTable.h"
+	"../../include/ParserInclude/ParserEngine.h"
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+	"../../include/ParserInclude/ParserEngine.h"
+
+1492968877 c:\users\shady\desktop\compiler\include\parserinclude\parser.h
+	<bits/stdc++.h>
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+
+1492952177 c:\users\shady\desktop\compiler\include\parserinclude\parsingtable.h
+	"GrammerParser.h"
+	<string>
+	<vector>
+
+1492969087 c:\users\shady\desktop\compiler\include\parserinclude\parserengine.h
+	"ParsingTable.h"
+	<string>
+	<vector>
+	<fstream>
+	"../LexicalInclude/LexicalAnalyzer.h"
+
+1492973688 source:c:\users\shady\desktop\compiler\src\parsersrc\parserengine.cpp
+	"../../include/ParserInclude/ParserEngine.h"
+	"../../include/ParserInclude/ParsingTable.h"
+	<string>
+	<stack>
+	<vector>
+	<iterator>
+	<fstream>
+	<iostream>
+	<algorithm>
+
+1492968172 source:c:\users\shady\desktop\compiler\src\parsersrc\parsingtable.cpp
+	"../../include/ParserInclude/ParsingTable.h"
+	"../../include/ParserInclude/ParsingTableHelpingFunctions.h"
+
+1492891654 c:\users\shady\desktop\compiler\include\parserinclude\parsingtablehelpingfunctions.h
+	<bits/stdc++.h>
+	"ParsingTable.h"
+	"GrammerParser.h"
+
+1492968179 source:c:\users\shady\desktop\compiler\src\parsersrc\parsingtablehelpingfunctions.cpp
+	<bits/stdc++.h>
+	"../../include/ParserInclude/ParsingTableHelpingFunctions.h"
+
+1492968044 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\dfa.cpp
+	"../../include/LexicalInclude/DFA.h"
+	"../../include/LexicalInclude/graph.h"
+	<bits/stdc++.h>
+
+1491811326 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\dfa.h
+	<bits/stdc++.h>
+	"graph.h"
+
+1490542660 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\graph.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+
+1492968066 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\dfaminimizer.cpp
+	"../../include/LexicalInclude/DFAMinimizer.h"
+
+1491813162 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\dfaminimizer.h
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<set>
+	<string.h>
+	<stdlib.h>
+	"DFA.h"
+
+1492968075 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\graph.cpp
+	"../../include/LexicalInclude/graph.h"
+	<iostream>
+	<vector>
+	<map>
+	<string>
+
+1493135741 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\lexicalanalyzer.cpp
+	<bits/stdc++.h>
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+	"../../include/LexicalInclude/NFABuilder.h"
+	"../../include/LexicalInclude/DFA.h"
+	"../../include/LexicalInclude/DFAMinimizer.h"
+
+1491821687 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\lexicalanalyzer.h
+	"graph.h"
+	"NFABuilder.h"
+	<bits/stdc++.h>
+
+1491662273 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\nfabuilder.h
+	<string>
+	<vector>
+	<iostream>
+	<utility>
+	<stack>
+	<map>
+	"graph.h"
+
+1493136038 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\nfabuilder.cpp
+	"../../include/LexicalInclude/NFABuilder.h"
+	"../../include/LexicalInclude/graph.h"
+	<string>
+	<iterator>
+	<stack>
+	<vector>
+	<iostream>
+	<utility>
+	"../../include/LexicalInclude/Reader.h"
+
+1493136674 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\reader.h
+	<stdio.h>
+	<sstream>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<string>
+	<map>
+	<vector>
+	<regex>
+	<fstream>
+	"Postfix.h"
+
+1492026656 c:\users\shady\desktop\projects\compiler\include\lexicalinclude\postfix.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<vector>
+	<strings.h>
+	<stack>
+
+1493136530 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\postfix.cpp
+	"../../include/LexicalInclude/Postfix.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<vector>
+	<strings.h>
+	<stack>
+	<sstream>
+	<iterator>
+	<fstream>
+	<regex>
+
+1493136649 source:c:\users\shady\desktop\projects\compiler\src\lexicalsrc\reader.cpp
+	"../../include/LexicalInclude/Reader.h"
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<strings.h>
+	<string>
+	<map>
+	<regex>
+
+1493459359 source:c:\users\shady\desktop\projects\compiler\src\parsersrc\grammerparser.cpp
+	"../../include/ParserInclude/GrammerParser.h"
+	<iostream>
+	<vector>
+	<string>
+	<regex>
+	<fstream>
+
+1493458768 c:\users\shady\desktop\projects\compiler\include\parserinclude\grammerparser.h
+	<bits/stdc++.h>
+	<sstream>
+
+1493459088 source:c:\users\shady\desktop\projects\compiler\src\parsersrc\parsingtable.cpp
+	"../../include/ParserInclude/ParsingTable.h"
+	"../../include/ParserInclude/ParsingTableHelpingFunctions.h"
+
+1493459043 c:\users\shady\desktop\projects\compiler\include\parserinclude\parsingtable.h
+	"GrammerParser.h"
+	<string>
+	<vector>
+
+1492891654 c:\users\shady\desktop\projects\compiler\include\parserinclude\parsingtablehelpingfunctions.h
+	<bits/stdc++.h>
+	"ParsingTable.h"
+	"GrammerParser.h"
+
+1493127743 source:c:\users\shady\desktop\projects\compiler\src\parsersrc\parsingtablehelpingfunctions.cpp
+	<bits/stdc++.h>
+	"../../include/ParserInclude/ParsingTableHelpingFunctions.h"
+
+1493138511 source:c:\users\shady\desktop\projects\compiler\src\parsersrc\parser.cpp
+	"../../include/ParserInclude/Parser.h"
+	"../../include/ParserInclude/GrammerParser.h"
+	"../../include/ParserInclude/ParsingTable.h"
+	"../../include/ParserInclude/ParserEngine.h"
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+	"../../include/ParserInclude/ParserEngine.h"
+
+1492968877 c:\users\shady\desktop\projects\compiler\include\parserinclude\parser.h
+	<bits/stdc++.h>
+	"../../include/LexicalInclude/LexicalAnalyzer.h"
+
+1493455500 c:\users\shady\desktop\projects\compiler\include\parserinclude\parserengine.h
+	"ParsingTable.h"
+	<string>
+	<vector>
+	<fstream>
+	"../LexicalInclude/LexicalAnalyzer.h"
+
+1493460109 source:c:\users\shady\desktop\projects\compiler\src\parsersrc\parserengine.cpp
+	"../../include/ParserInclude/ParserEngine.h"
+	"../../include/ParserInclude/ParsingTable.h"
+	<string>
+	<stack>
+	<vector>
+	<iterator>
+	<fstream>
+	<iostream>
+	<algorithm>
+
+1493458041 source:c:\users\shady\desktop\projects\compiler\main.cpp
+	<iostream>
+	<map>
+	<vector>
+	<string>
+	"include\LexicalInclude\NFABuilder.h"
+	"include\LexicalInclude\LexicalAnalyzer.h"
+	<stdio.h>
+	"include\LexicalInclude\Reader.h"
+	"include\LexicalInclude\DFA.h"
+	"include/ParserInclude/Parser.h"
+	"include/ParserInclude/GrammerParser.h"
+	<regex>
+

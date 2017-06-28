@@ -1,0 +1,4 @@
+count
+mnt
+pass
+sum1

@@ -1,0 +1,85 @@
+METHOD_BODY 
+STATEMENT_LIST 
+STATEMENT STATEMENT_LIST` 
+DECLARATION STATEMENT_LIST` 
+PRIMITIVE_TYPE id ; STATEMENT_LIST` 
+int id ; STATEMENT_LIST` 
+Error: , doesn't exist among terminals
+Error: missing ;, inserted
+int id ; STATEMENT STATEMENT_LIST` 
+int id ; ASSIGNMENT STATEMENT_LIST` 
+int id ; id assign EXPRESSION ; STATEMENT_LIST` 
+Error: , doesn't exist among terminals
+Error: missing assign, inserted
+int id ; id assign SIMPLE_EXPRESSION EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign TERM SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+Error: , doesn't exist among terminals
+Error: (illegal TERM` ) - discard id
+int id ; id assign id SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; STATEMENT_LIST` 
+int id ; id assign id ; STATEMENT STATEMENT_LIST` 
+int id ; id assign id ; WHILE STATEMENT_LIST` 
+int id ; id assign id ; while ( EXPRESSION ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( SIMPLE_EXPRESSION EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( TERM SIMPLE_EXPRESSION` EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id TERM` SIMPLE_EXPRESSION` EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id SIMPLE_EXPRESSION` EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id EXPRESSION1 ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop SIMPLE_EXPRESSION ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop TERM SIMPLE_EXPRESSION` ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop FACTOR TERM` SIMPLE_EXPRESSION` ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num TERM` SIMPLE_EXPRESSION` ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num SIMPLE_EXPRESSION` ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { STATEMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { ASSIGNMENT } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign EXPRESSION ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign SIMPLE_EXPRESSION EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign TERM SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop TERM SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+Error: (illegal TERM` ) - discard }
+Error: (illegal TERM` ) - discard if
+Error: (illegal TERM` ) - discard (
+Error: (illegal TERM` ) - discard id
+int id ; id assign id ; while ( id relop num ) { id assign id addop num SIMPLE_EXPRESSION` EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num EXPRESSION1 ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop SIMPLE_EXPRESSION ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop TERM SIMPLE_EXPRESSION` ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop FACTOR TERM` SIMPLE_EXPRESSION` ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num TERM` SIMPLE_EXPRESSION` ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num SIMPLE_EXPRESSION` ; } STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } STATEMENT_LIST` 
+Error: missing ;, inserted
+Error: missing }, inserted
+Error: (illegal STATEMENT_LIST` ) - discard )
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } STATEMENT STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } ASSIGNMENT STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign EXPRESSION ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign SIMPLE_EXPRESSION EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign TERM SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; STATEMENT_LIST` 
+Error: (illegal STATEMENT_LIST` ) - discard else
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; STATEMENT STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; ASSIGNMENT STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign EXPRESSION ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign SIMPLE_EXPRESSION EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign TERM SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign FACTOR TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign num TERM` SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign num SIMPLE_EXPRESSION` EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign num EXPRESSION1 ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign num ; STATEMENT_LIST` 
+int id ; id assign id ; while ( id relop num ) { id assign id addop num relop num ; } id assign num ; id assign num ; 
+parse complete
